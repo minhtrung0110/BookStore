@@ -27,12 +27,13 @@ class App {
         }
         //Xu Ly Params
         $this->params=$arr?array_values($arr):[];
-
-        echo $this->controller;
+        // gọi làm Action trong Class của Controller với tham số truyền vào là mảng Params.
+        call_user_func_array([$this->controller,$this->action],$this->params);
+       /* echo $this->controller;
         echo "<br>";
         echo $this->action;
         echo "<br>";
-        print_r($this->params);
+        print_r($this->params);*/
 
        
     }
