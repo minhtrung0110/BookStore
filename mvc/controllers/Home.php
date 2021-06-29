@@ -4,10 +4,13 @@
     function __construct(){
 
     }
-    public function ShowNewProduct(){
-      echo "a";
-      echo  $this->GetModel("BookModel")->GetBooks();
-      //echo $newproduct->GetBooks();
+    public function ShowNewProduct($number){
+      //Gọi hàm GetModel trong controller để include file BookModel.php vào index.php
+      $newbookmodel= $this->GetModel("BookModel");
+      $cartnewbook= $newbookmodel->GetNewBook($number);
+
+      //Gọi hàm GetView trong controller để include file NewProduct.php vào index.php
+      $newbookview=$this->GetView("NewProduct",["1"=>$cartnewbook]);
       
      
 
