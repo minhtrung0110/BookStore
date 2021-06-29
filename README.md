@@ -1,7 +1,7 @@
 # BookStore
 🧨 Demo theo mô hình M-V-C
 🧨 Quản Lý Cửa Hàng Sách
-## <p style="color:red;font-weight:bold;">Cấu Trúc Thư Mục</p>
+ <p style="color:red;font-weight:bold;font-size:20px">Cấu Trúc Thư Mục</p>
 + mvc : Chứa Model - View - Controler
 
 + public : giao dien, HTML,CSS...
@@ -12,7 +12,7 @@ VD: URL sẽ là http://localhost/MVC/BookStore/BookStore/Home thay vì http://l
 ⛏ Index=> gọi Bridge.php=> App.php
         *App.php: Quản lý URL , cắt URL, chuyển đến Controller
         <hr style="width:4px; color:#blue">
-## <p style="color:red;font-weight:bold;">M-V-C</p>
+ <p style="color:red;font-weight:bold;font-size:20px">M-V-C</p>
 ### Bridge.php: 
     - Cầu nối đến Core/App.php
     - Cầu nối đến Core/Controller.php
