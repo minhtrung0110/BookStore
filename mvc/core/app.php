@@ -17,6 +17,9 @@ class App {
         unset($arr[0]);
        }
         require_once("./mvc/controllers/".$this->controller.".php");
+        // Tao 1 đối tượng Controller luôn để sau này có thể truy xuất dễ dàng đến các method
+        $this->controller= new $this->controller;
+        
         //Xu Ly action
         if(isset($arr[1])){
             if( method_exists($this->controller,$arr[1])){
@@ -39,7 +42,7 @@ class App {
     }
     function URLProceed(){
         if(isset($_GET['url'])){
-            $url=filter_var(trim($_GET['url']));// xoá ký tự lạ, khoảng trắng
+            $url=filter_var(trim($_GET['url'],"/"));// xoá ký tự lạ, khoảng trắng
            return  explode("/",$url);
 
         }
