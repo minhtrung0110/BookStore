@@ -25,7 +25,10 @@ VD: URL sẽ là http://localhost/MVC/BookStore/BookStore/Home thay vì http://l
 - Các Class với các method truy xuất đến Model và View.
 - Các Class extends Class Controller trong Core để có thể sử dụng lại 2 method lấy model và view .
 ### Cấu Trúc Model
+ + Các class Đối tượng
 ### Cấu Trúc view
+ + Thư mục views : chứa các Layout con
+ + bên ngoài là các master Layout
 
 
 
