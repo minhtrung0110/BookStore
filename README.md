@@ -21,6 +21,7 @@ VD: URL sẽ là http://localhost/MVC/BookStore/BookStore/Home thay vì http://l
 ### Core 
     - App.php: quản lý, điều hướng Cấu Trúc Controller
     - Controller.php:   quản lý, điều hướng , truy xuất đến Cấu Trúc View và Cấu Trúc Model; Chứa 2 method Model và View để truy xuất dữ liệu đến View và Model.
+    - ConnectionMySQL.php : kết nối với MYSQL . tuỳ hệ quản trị ta có thể viết nhiều class cho mỗi hệ quản trị khác nhau . Các class nào muốn connect database thì extends . 
 ### Cấu Trúc Controller ( gồm các trang chức năng chính của website)
 - Các Class với các method truy xuất đến Model và View.
 - Các Class extends Class Controller trong Core để có thể sử dụng lại 2 method lấy model và view .
