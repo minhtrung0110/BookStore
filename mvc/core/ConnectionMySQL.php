@@ -1,11 +1,11 @@
 <?php
 
 class ConnectionMySQL{
-        public $connection;
-        public $servername="localhost";
-        public $username="root";
-        public $password="";
-        public $databasename="quanlybansach";
+        protected $connection;
+        protected $servername="localhost";
+        protected $username="root";
+        protected $password="";
+        protected $databasename="quanlybansach";
 
         function __construct(){
             $this->connection =new mysqli($this->servername,$this->username,$this->password,$this->databasename);
