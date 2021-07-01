@@ -1,11 +1,12 @@
 <?php
 
-class BookModel{
+class BookModel extends ConnectionMySQL{
 
 
         
-        public function getBooks(){
-            return "Books";
+        public function getListBooks(){
+           $sql= "Select * from books ";
+           return mysqli_query($this->connection,$sql);
 
         }
         public function getNewBook($sl){

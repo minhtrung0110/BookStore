@@ -4,6 +4,14 @@
     function __construct(){
 
     }
+    public function ShowListBooks(){
+       $listbooks=$this->GetModel("BookModel")->getListBooks();
+       
+       $listbooks_view=$this->GetView("NewProduct",
+       ["infor"=>$listbooks]);
+
+
+    }
     public function ShowNewProduct($number){
       //Gọi hàm GetModel trong controller để include file BookModel.php vào index.php
       $newbookmodel= $this->GetModel("BookModel");

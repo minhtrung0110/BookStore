@@ -1,6 +1,6 @@
 <?php
 
-class Controller{
+class Controller {
 
 
     function __construct(){
@@ -17,6 +17,7 @@ class Controller{
         require_once "./mvc/views/".$name_view.".php";
        
     }
+    // tham số truyền vào data[] là mảng gồm các key và values
 
 }
 
